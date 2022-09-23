@@ -24,12 +24,6 @@ public class SelectStageMgr : MonoBehaviour
         StartCoroutine(StartScene());
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     IEnumerator StartScene()
     {
         for (int i = 0; i < GameManager.In.OpenSituation; i++)

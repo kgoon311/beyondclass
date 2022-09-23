@@ -16,12 +16,6 @@ public class TitleMgr : MonoBehaviour
         GameStartBtn.onClick.AddListener(() => StartCoroutine(GameStart()));
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     IEnumerator GameStart()
     {
         yield return null;

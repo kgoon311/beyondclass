@@ -28,12 +28,6 @@ public class GameMgr : MonoBehaviour
         btnsetting();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     IEnumerator MoveMan()
     {
         yield return null;
