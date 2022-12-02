@@ -36,7 +36,8 @@ public class GameBase : MonoBehaviour
         Select1.onClick.AddListener(() => StartCoroutine(ActionButton1()));
         Select2.onClick.AddListener(() => StartCoroutine(ActionButton2()));
     }
-    protected virtual IEnumerator ActionButton1() {
+    protected virtual IEnumerator ActionButton1()
+    {
         yield return new WaitForSeconds(1.0f);
 
         SuccesPanel.SetActive(true);
