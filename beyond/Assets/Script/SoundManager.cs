@@ -34,7 +34,9 @@ public class SoundManager : SingletonMono<SoundManager>
     protected override void OnAwake()
     {
         //Resources폴더 안에 Sounds폴더 안에 있는  AudioClip을 전부 가져온다
+        Debug.Log("잉");
         AudioClip[] clips = Resources.LoadAll<AudioClip>("Sounds/");
+        print(clips[0]);
         //가져온 AudioClips를 Dictionary에 추가
         foreach (AudioClip clip in clips)
         {
