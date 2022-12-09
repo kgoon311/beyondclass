@@ -27,6 +27,7 @@ public class DateSituation2 : MonoBehaviour
     IEnumerator Select1Show()
     {
         yield return null;
+        SoundManager.In.PlaySoundClip("fail", ESoundType.SFX);
 
         ManChatBox.text = "짜란~!";
         MoveMan.transform.DOMove(new Vector3(-1.5f, -0.3f, 0.0f), 0.7f);
@@ -40,6 +41,7 @@ public class DateSituation2 : MonoBehaviour
     {
         yield return null;
 
+        SoundManager.In.PlaySoundClip("Clear", ESoundType.SFX);
         ManChatBox.text = "하하핳";
         yield return new WaitForSeconds(1.0f);
 
@@ -48,6 +50,8 @@ public class DateSituation2 : MonoBehaviour
 
     void SceneStart()
     {
+        SoundManager.In.PlaySoundClip("Click", ESoundType.SFX);
+
         Panel.SetActive(false);
     }
 
@@ -61,6 +65,8 @@ public class DateSituation2 : MonoBehaviour
 
     public void GoMainScene()
     {
+        SoundManager.In.PlaySoundClip("Click", ESoundType.SFX);
+
         SceneManager.LoadScene(0);
     }
 }

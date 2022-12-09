@@ -27,6 +27,7 @@ public class DateSituation4 : MonoBehaviour
     IEnumerator Select1Show()
     {
         yield return null;
+        SoundManager.In.PlaySoundClip("Clear", ESoundType.SFX);
 
         ManChatBox.text = "내가 미안해..";
 
@@ -38,6 +39,7 @@ public class DateSituation4 : MonoBehaviour
     IEnumerator Select2Show()
     {
         yield return null;
+        SoundManager.In.PlaySoundClip("fail", ESoundType.SFX);
 
         ManChatBox.text = "왜 화났어?!";
 
@@ -48,6 +50,8 @@ public class DateSituation4 : MonoBehaviour
 
     void SceneStart()
     {
+        SoundManager.In.PlaySoundClip("Click", ESoundType.SFX);
+
         Panel.SetActive(false);
     }
 
@@ -61,6 +65,8 @@ public class DateSituation4 : MonoBehaviour
 
     public void GoMainScene()
     {
+        SoundManager.In.PlaySoundClip("Click", ESoundType.SFX);
+
         SceneManager.LoadScene(0);
     }
 }
