@@ -39,12 +39,13 @@ public class GameBase : MonoBehaviour
     protected virtual IEnumerator ActionButton1()
     {
         yield return new WaitForSeconds(1.0f);
-
+        SoundManager.In.PlaySoundClip("Clear", ESoundType.SFX, 1, 1);
         SuccesPanel.SetActive(true);
     }
     protected virtual IEnumerator ActionButton2() {
         yield return new WaitForSeconds(1.0f);
 
+        SoundManager.In.PlaySoundClip("fail", ESoundType.SFX, 1, 1);
         FailPanel.SetActive(true);
     }
 }
