@@ -1314,7 +1314,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 726e494eb8e3fb543a23fa87dfabb3eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FadePanel: {fileID: 0}
   UnLockObjs:
   - UnLockBtn: {fileID: 1505650102}
     UnLockImg: {fileID: 879916746}
@@ -1326,6 +1325,18 @@ MonoBehaviour:
     UnLockImg: {fileID: 1101113318}
   - UnLockBtn: {fileID: 222536847}
     UnLockImg: {fileID: 2109581321}
+  DateScene:
+  - {fileID: 102900000, guid: 96ed6526192df0b41b2493def8065c2b, type: 3}
+  - {fileID: 102900000, guid: e79ab531e68918141b627cfeb45a3b50, type: 3}
+  - {fileID: 102900000, guid: f40b2a3571cfcaa498880258a521b0c7, type: 3}
+  - {fileID: 102900000, guid: 4a46e0aad217f5042967746009b66246, type: 3}
+  - {fileID: 102900000, guid: 892de51d5b2daa940bcfb2823d005a7c, type: 3}
+  CompanyScene:
+  - {fileID: 102900000, guid: 0dcb551cff09628419334e48d2b200e4, type: 3}
+  - {fileID: 102900000, guid: 83f656ffbd27c73469720b12beff784f, type: 3}
+  - {fileID: 102900000, guid: a7709ef6a480848479f37023d20e9d3b, type: 3}
+  - {fileID: 102900000, guid: 776bbdbe7a9245c439b5e28bfcd006e7, type: 3}
+  - {fileID: 102900000, guid: 347618bf486d3814b91cd57ab7ae2e25, type: 3}
 --- !u!4 &986932742
 Transform:
   m_ObjectHideFlags: 0
@@ -1833,7 +1844,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 986932741}
         m_TargetAssemblyTypeName: SelectStageMgr, Assembly-CSharp
-        m_MethodName: GoInGame
+        m_MethodName: GoCompanyGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1968,7 +1979,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 986932741}
         m_TargetAssemblyTypeName: SelectStageMgr, Assembly-CSharp
-        m_MethodName: GoInGame
+        m_MethodName: GoDateGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -33,6 +33,7 @@ public class DateSituation3 : MonoBehaviour
     IEnumerator Select1Show()
     {
         yield return null;
+        SoundManager.In.PlaySoundClip("Clear", ESoundType.SFX);
 
         MoveMan.transform.DOMove(GirlOrignPos, 0.7f);
         MoveGirl.transform.DOMove(ManOrignPos, 0.7f);
@@ -50,6 +51,7 @@ public class DateSituation3 : MonoBehaviour
     IEnumerator Select2Show()
     {
         yield return null;
+        SoundManager.In.PlaySoundClip("fail", ESoundType.SFX);
 
         MoveMan.transform.DOMove(ManOrignPos + new Vector2(0, 9.0f), 2f);
         MoveGirl.transform.DOMove(GirlOrignPos + new Vector2(0, 9.0f), 2f);
@@ -61,6 +63,8 @@ public class DateSituation3 : MonoBehaviour
 
     void SceneStart()
     {
+        SoundManager.In.PlaySoundClip("Click", ESoundType.SFX);
+
         Panel.SetActive(false);
     }
 
@@ -74,6 +78,8 @@ public class DateSituation3 : MonoBehaviour
 
     public void GoMainScene()
     {
+        SoundManager.In.PlaySoundClip("Click", ESoundType.SFX);
+
         SceneManager.LoadScene(0);
     }
 }

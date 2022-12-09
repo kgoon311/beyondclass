@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using DG.Tweening;
+using UnityEditor;
 
 [System.Serializable]
 public class UnLockObj
@@ -15,6 +17,9 @@ public class UnLockObj
 public class SelectStageMgr : MonoBehaviour
 {
     public List<UnLockObj> UnLockObjs; 
+
+    public List<SceneAsset> DateScene;
+    public List<SceneAsset> CompanyScene;
 
     // Start is called before the first frame update
     void Start()
@@ -32,8 +37,15 @@ public class SelectStageMgr : MonoBehaviour
         yield return null;
     }
 
-    public void GoInGame()
+    public void GoDateGame()
     {
-        SceneManager.LoadScene(2);
+        SoundManager.In.PlaySoundClip("Click", ESoundType.SFX);
+        SceneManager.LoadScene(DateScene[Random.Range(0, DateScene.Count)].name);
+    }
+
+    public void GoCompanyGame()
+    {
+        SoundManager.In.PlaySoundClip("Click", ESoundType.SFX);
+        SceneManager.LoadScene(CompanyScene[Random.Range(0, CompanyScene.Count)].name);
     }
 }

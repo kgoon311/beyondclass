@@ -18,6 +18,7 @@ public class TitleMgr : MonoBehaviour
     IEnumerator GameStart()
     {
         yield return null;
+        SoundManager.In.PlaySoundClip("Click", ESoundType.SFX);
 
         SceneManager.LoadScene(1);
     }
