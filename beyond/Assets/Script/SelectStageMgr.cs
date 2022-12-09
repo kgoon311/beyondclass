@@ -14,8 +14,6 @@ public class UnLockObj
 
 public class SelectStageMgr : MonoBehaviour
 {
-    public GameObject FadePanel = null;
-
     public List<UnLockObj> UnLockObjs; 
 
     // Start is called before the first frame update
@@ -32,12 +30,6 @@ public class SelectStageMgr : MonoBehaviour
         }
 
         yield return null;
-
-        FadePanel.SetActive(true);
-        FadePanel.GetComponent<Image>().DOFade(0, 1);
-        yield return new WaitForSeconds(1);
-
-        FadePanel.SetActive(false);
     }
 
     public void GoInGame()
