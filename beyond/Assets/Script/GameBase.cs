@@ -26,7 +26,7 @@ public class GameBase : MonoBehaviour
     }
     void Restart()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene(0);
     }
     void btnsetting()
     {
