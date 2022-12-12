@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : SingletonMono<GameManager>
 {
@@ -9,6 +10,6 @@ public class GameManager : SingletonMono<GameManager>
     private void Start()
     {
         SoundManager.In.PlaySoundClip("BGM", ESoundType.BGM, 1, 1);
-
+        Screen.SetResolution(600, 1233, true);
     }
 }
