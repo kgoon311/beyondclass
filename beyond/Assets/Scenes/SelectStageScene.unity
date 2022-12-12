@@ -1034,7 +1034,7 @@ RectTransform:
   m_GameObject: {fileID: 874378891}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.75, y: 0.65, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 415852816}
@@ -1325,18 +1325,8 @@ MonoBehaviour:
     UnLockImg: {fileID: 1101113318}
   - UnLockBtn: {fileID: 222536847}
     UnLockImg: {fileID: 2109581321}
-  DateScene:
-  - {fileID: 102900000, guid: 96ed6526192df0b41b2493def8065c2b, type: 3}
-  - {fileID: 102900000, guid: e79ab531e68918141b627cfeb45a3b50, type: 3}
-  - {fileID: 102900000, guid: f40b2a3571cfcaa498880258a521b0c7, type: 3}
-  - {fileID: 102900000, guid: 4a46e0aad217f5042967746009b66246, type: 3}
-  - {fileID: 102900000, guid: 892de51d5b2daa940bcfb2823d005a7c, type: 3}
-  CompanyScene:
-  - {fileID: 102900000, guid: 0dcb551cff09628419334e48d2b200e4, type: 3}
-  - {fileID: 102900000, guid: 83f656ffbd27c73469720b12beff784f, type: 3}
-  - {fileID: 102900000, guid: a7709ef6a480848479f37023d20e9d3b, type: 3}
-  - {fileID: 102900000, guid: 776bbdbe7a9245c439b5e28bfcd006e7, type: 3}
-  - {fileID: 102900000, guid: 347618bf486d3814b91cd57ab7ae2e25, type: 3}
+  DateScene: 0200000003000000040000000500000006000000
+  CompanyScene: 0700000008000000090000000a0000000b000000
 --- !u!4 &986932742
 Transform:
   m_ObjectHideFlags: 0
@@ -1664,7 +1654,7 @@ RectTransform:
   m_GameObject: {fileID: 1092496453}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.75, y: 0.65, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1505650101}
@@ -2154,7 +2144,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 1080, y: 1920}
+  m_ReferenceResolution: {x: 1440, y: 2960}
   m_ScreenMatchMode: 1
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3

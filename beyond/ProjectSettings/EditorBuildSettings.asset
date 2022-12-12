@@ -12,9 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/SelectStageScene.unity
     guid: 36fa270720c491043bcabb18c3d16457
   - enabled: 1
-    path: Assets/Scenes/InGameScene.unity
-    guid: e9584904c8ccc2a41aca2c22c12aa521
-  - enabled: 1
     path: Assets/Scenes/Date/Date_Situation_1.unity
     guid: 96ed6526192df0b41b2493def8065c2b
   - enabled: 1
